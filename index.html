@@ -1061,8 +1061,9 @@
     </main>
 
     <!-- FOOTER -->
-    <footer class="mt-auto p-4 flex justify-between text-xs text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 transition-colors duration-200">
+    <footer class="mt-auto p-4 flex flex-col md:flex-row md:justify-between md:items-center gap-1 text-xs text-slate-400 dark:text-slate-500 bg-slate-100 dark:bg-slate-800 border-t border-slate-200 dark:border-slate-700 transition-colors duration-200">
       <span><strong id="footerTitle">SD INPRES 17 KALOBO</strong></span>
+      <span class="text-[11px]">Dikembangkan oleh: <strong>Winanto Tri Hapsoro, S.Pd.I., Gr.</strong> — SMAN 8 Raja Ampat</span>
       <span>© 2026 Hak Cipta Dilindungi.</span>
     </footer>
 
@@ -2621,7 +2622,7 @@
       localStorage.setItem('cfgOperator', operator);
 
       const footerTitle = document.getElementById('footerTitle');
-      if (footerTitle) footerTitle.innerText = `${namaSekolah} PWTH`;
+      if (footerTitle) footerTitle.innerText = namaSekolah;
     }
 
     function generateCard(e) {
